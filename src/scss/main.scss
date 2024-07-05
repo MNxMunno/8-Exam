@@ -35,13 +35,16 @@ button {
 
 @import "./static/banner";
 @import "./static/btn";
+@import "./static/card";
 @import "./static/title";
 @import "./components/catalog";
 @import "./components/header";
 @import "./components/model";
 @import "./components/navbarTop";
 @import "./components/nornlight";
+@import "./components/mapProducts";
 // @import "./components/products";
+@import "./components/NotFound";
 @import "./components/brends";
 @import "./components/blog";
 @import "./components/desc";
@@ -51,3 +54,5 @@ button {
 @import "./routes/shipping";
 @import "./routes/return";
 @import "./routes/blogPage";
+@import "./routes/garant";
+@import "./routes/contact";

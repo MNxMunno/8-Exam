@@ -19,11 +19,12 @@ import Garant from "./routes/garant/Garant";
 import Admin from "./routes/admin/Admin";
 import Cart from "./routes/cart/Cart";
 import Footer from "./components/footer/Footer";
+import NotFound from "./components/notFound/NotFound";
 
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -42,7 +43,7 @@ const App = () => {
         <Route path="/" element={<Auth />}>
           <Route path="admin" element={<Admin />}></Route>
         </Route>
-        <Route path="*" element={<h1>404 Not Found</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

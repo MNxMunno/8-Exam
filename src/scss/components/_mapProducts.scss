@@ -1,0 +1,22 @@
+.map__products {
+  .seeMore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    margin: auto;
+    margin-top: 60px;
+    background: #454545;
+    padding: 14px 44px;
+    color: #fff;
+    font-family: Manrope;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 1px solid #454545;
+    transition: 0.3s;
+    &:hover {
+      background: #fff;
+      color: #454545;
+    }
+  }
+}

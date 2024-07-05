@@ -1,0 +1,36 @@
+.not_found {
+  padding: 100px 0;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+    h1 {
+      font-family: Manrope;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 33.6px;
+      text-align: left;
+      color: #454545;
+    }
+    button {
+      background: #454545;
+      color: #fff;
+      padding: 14px 42px;
+      border-radius: 50px;
+      transition: 0.3s;
+      border: 1px solid #454545;
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21.86px;
+      text-align: left;
+
+      &:hover {
+        background: #fff;
+        color: #454545;
+      }
+    }
+  }
+}
