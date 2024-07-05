@@ -1,0 +1,46 @@
+.brends {
+  .content {
+    h1 {
+      font-family: Manrope;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      text-align: left;
+      color: #454545;
+    }
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 40px 0;
+      .card {
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 777px) {
+    .content {
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  @media only screen and (max-width: 474px) {
+    .content {
+      h1 {
+        font-size: 28px;
+        line-height: 48px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

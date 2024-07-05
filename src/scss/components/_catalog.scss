@@ -1,0 +1,138 @@
+.catalog {
+  padding: 97px 0 50px;
+  .content {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      flex-wrap: wrap;
+      .card {
+        max-width: 350px;
+        min-width: 350px;
+        height: 250px;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        justify-content: space-between;
+        background: #f2f2f2;
+        border-radius: 20px;
+        padding: 32px;
+        position: relative;
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .texts {
+          h3 {
+            font-family: Manrope;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22px;
+            text-align: left;
+            color: #454545;
+          }
+          a {
+            position: absolute;
+            left: 40px;
+            bottom: 20px;
+            color: #454545;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            z-index: 1;
+          }
+        }
+        .img {
+          max-width: 180px;
+          max-height: 250px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .mySwiper {
+      display: none;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      h1 {
+        font-family: Manrope;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 54.64px;
+        text-align: left;
+        color: #454545;
+      }
+    }
+  }
+  @media only screen and (max-width: 1111px) {
+    .content {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  @media only screen and (max-width: 757px) {
+    .content {
+      .cards {
+        display: none;
+      }
+      .mySwiper {
+        display: block;
+        .slide {
+          padding: 40px 0;
+          .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 32px;
+            width: 270px;
+            height: 250px;
+            padding: 20px 0;
+            position: relative;
+            .texts {
+              h3 {
+                text-align: start;
+              }
+              a {
+                display: flex;
+                gap: 5px;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: #454545;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .content {
+      .mySwiper {
+        .slide {
+          .card {
+            .img {
+              padding-bottom: 40px;
+              max-width: 100px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

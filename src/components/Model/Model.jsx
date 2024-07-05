@@ -1,7 +1,12 @@
 import React from "react";
 
-const Model = () => {
-  return <div>Model</div>;
+const Modul = ({ close, children }) => {
+  return (
+    <div>
+      <div onClick={() => close(false)} className="overlay"></div>
+      <div className="modul">{children}</div>
+    </div>
+  );
 };
 
-export default Model;
+export default Modul;

@@ -1,0 +1,50 @@
+.detail {
+  .text__content {
+    padding-top: 181px;
+    h1 {
+      font-family: Manrope;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 44px;
+      text-align: left;
+      color: #454545;
+    }
+    .text__cards {
+      padding: 23px 0 85px;
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 28px 24px;
+        b {
+          max-width: 606px;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 5 00;
+          line-height: 19.68px;
+          text-align: left;
+          color: #101010;
+        }
+        p {
+          max-width: 606px;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 28.8px;
+          letter-spacing: 0.01em;
+          text-align: right;
+          color: #4c4c4c;
+        }
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6),
+        &:nth-child(8),
+        &:nth-child(10),
+        &:nth-child(12) {
+          background: #f8f8f8;
+        }
+      }
+    }
+  }
+}

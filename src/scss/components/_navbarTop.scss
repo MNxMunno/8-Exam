@@ -1,0 +1,38 @@
+.top_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  gap: 24px;
+  .top_item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    a {
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19.12px;
+      text-align: left;
+      color: #454545;
+      opacity: 50%;
+      &.active {
+        opacity: 1;
+      }
+    }
+    button {
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19.12px;
+      text-align: left;
+      color: #454545;
+      opacity: 50%;
+    }
+  }
+  @media only screen and (max-width: 868px) {
+    & {
+      display: none;
+    }
+  }
+}
