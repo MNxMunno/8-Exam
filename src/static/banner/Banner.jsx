@@ -16,7 +16,7 @@ import "swiper/css/navigation";
 import "./styles.css";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, Mousewheel } from "swiper/modules";
 
 const Banner = () => {
   return (
@@ -32,6 +32,7 @@ const Banner = () => {
           }}
           pagination={{
             clickable: true,
+            // el: ".swiper-pagination",
           }}
           navigation={false}
           modules={[Autoplay, Pagination, Navigation]}

@@ -5,6 +5,7 @@ import Nornlight from "../../components/nornlight/Nornlight";
 import Brend from "../../components/brend/Brend";
 import Blog from "../../components/blog/Blog";
 import Descriptiopn from "../../components/description/Descriptiopn";
+import Btn from "../../static/btn/Btn";
 
 const Home = () => {
   return (
@@ -13,6 +14,12 @@ const Home = () => {
       <Catalog />
       <Nornlight />
       <Brend />
+      <div className="container">
+        <div className="titles">
+          <h1>Блог</h1>
+          <Btn text={"Перейти в блог"} />
+        </div>
+      </div>
       <Blog />
       <Descriptiopn />
     </main>

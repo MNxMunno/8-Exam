@@ -7,7 +7,7 @@ import Detail from "./routes/detail/Detail";
 import { Route, Routes } from "react-router-dom";
 import Auth from "./routes/auth/Auth";
 import Basket from "./routes/basket/Basket";
-import Blog from "./routes/blog/Blog";
+import Blog from "./routes/blog/BlogPage";
 import Catalog from "./routes/catalog/Catalog";
 import Contact from "./routes/contact/Contact";
 import Wishlist from "./routes/wishlist/Wishlist";
