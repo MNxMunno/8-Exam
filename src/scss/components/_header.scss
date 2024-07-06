@@ -191,16 +191,9 @@ header {
         flex-direction: column;
       }
       .nav_collac {
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        left: 0;
-        right: 0;
-        opacity: 0.8;
-        background: #fff;
-        transition: 0.3s;
+        padding: 20px 0;
         &.show {
-          top: 150px;
+          top: 100px;
         }
       }
     }
