@@ -1,7 +1,8 @@
 import React from "react";
+import MapProducts from "../../../components/mapProducts/MapProducts";
 
 const ManageProduct = () => {
-  return <div>ManageProduct</div>;
+  return <MapProducts isAdmin={true} />;
 };
 
 export default ManageProduct;

@@ -1,7 +1,7 @@
 import React from "react";
 
-const s = () => {
+const ManageCategory = () => {
   return <div>s</div>;
 };
 
-export default s;
+export default ManageCategory;

@@ -7,7 +7,7 @@ import {
 import { useSearchParams } from "react-router-dom";
 import Skileton from "../skileton/Skileton";
 
-const MapProducts = () => {
+const MapProducts = ({ isAdmin }) => {
   const [proSlice, setProSlice] = useState(8);
   const { data, isLoading } = useGetProductsQuery();
 
@@ -18,7 +18,7 @@ const MapProducts = () => {
     <section className="map__products">
       <div className="container">
         {isLoading ? <Skileton count={8} /> : <></>}
-        <Card data={card} />
+        <Card isAdmin={isAdmin} data={card} />
 
         <button
           className="seeMore"

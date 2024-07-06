@@ -77,7 +77,10 @@ const Detail = () => {
                     +
                   </button>
                 </div>
-                <button onClick={() => dispatch(addToCart(data))}>
+                <button
+                  className="add"
+                  onClick={() => dispatch(addToCart(data))}
+                >
                   В корзину
                 </button>
 

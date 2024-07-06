@@ -7,7 +7,7 @@ const Contact = () => {
   }, []);
   return (
     <section className="contact">
-      <div className="container">
+      <div className="container  ">
         <div className="contact_content">
           <Title text={"Контакты"} />
           <div className="contact_content__cards">

@@ -33,6 +33,8 @@ button {
   background: transparent;
 }
 
+@import "./routes/admin";
+@import "./routes/login";
 @import "./static/banner";
 @import "./static/btn";
 @import "./static/card";
@@ -46,8 +48,8 @@ button {
 @import "./components/empty";
 @import "./components/skileton";
 @import "./components/loading";
-// @import "./components/products";
 @import "./components/NotFound";
+@import "./components/clickPaymentProduct";
 @import "./components/brends";
 @import "./components/blog";
 @import "./components/desc";
@@ -56,9 +58,11 @@ button {
 @import "./routes/about";
 @import "./routes/shipping";
 @import "./routes/return";
+@import "./routes/admin";
 @import "./routes/blogPage";
 @import "./routes/garant";
 @import "./routes/contact";
 @import "./routes/wishlist";
 @import "./routes/products";
 @import "./routes/detail";
+@import "./routes/basket";
