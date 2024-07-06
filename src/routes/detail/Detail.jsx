@@ -60,13 +60,13 @@ const Detail = () => {
               <div className="btns">
                 <div className="btn">
                   <button
-                    onClick={() => dispatch(decrementCart(card))}
-                    disabled={card?.quantity <= 1}
+                    onClick={() => dispatch(decrementCart(data))}
+                    disabled={data?.quantity <= 1}
                   >
                     -
                   </button>
-                  <span>{card?.quantity}</span>
-                  <button onClick={() => dispatch(addToCart(card))}>+</button>
+                  <span>{data?.quantity}</span>
+                  <button onClick={() => dispatch(addToCart(data))}>+</button>
                 </div>
                 <button onClick={() => dispatch(addToCart(data))}>
                   В корзину
