@@ -11,18 +11,25 @@ import img5 from "../../assets/images/vb.svg";
 import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleHeart } from "../../context/slice/wishlist";
-import { addToCart, decrementCart } from "../../context/slice/cartSlice";
+import {
+  addToCart,
+  decrementCart,
+  incrementCart,
+} from "../../context/slice/cartSlice";
 
 const Detail = () => {
   const wishlist = useSelector((s) => s.wishlist.value);
   const card = useSelector((s) => s.cart.value);
+  const { id } = useParams();
+
   const dispatch = useDispatch();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const { id } = useParams();
   const { data, isLoading } = useGetProductByIdQuery(id);
-  console.log(data);
+  // console.log(data);
+  const [quant] = card?.filter((i) => i.id === data?.id);
+  console.log(quant);
   return (
     <section className="detail">
       <div className="container">
@@ -60,13 +67,15 @@ const Detail = () => {
               <div className="btns">
                 <div className="btn">
                   <button
-                    onClick={() => dispatch(decrementCart(data))}
-                    disabled={data?.quantity <= 1}
+                    onClick={() => dispatch(decrementCart(quant))}
+                    disabled={quant?.quantity <= 1}
                   >
                     -
                   </button>
-                  <span>{data?.quantity}</span>
-                  <button onClick={() => dispatch(addToCart(data))}>+</button>
+                  <span>{quant?.quantity}</span>
+                  <button onClick={() => dispatch(incrementCart(quant))}>
+                    +
+                  </button>
                 </div>
                 <button onClick={() => dispatch(addToCart(data))}>
                   В корзину

@@ -88,6 +88,25 @@
         color: #4c4c4c;
         max-width: 604px;
       }
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .btn {
+          border: 1px solid#ddd;
+          border-radius: 12px;
+          span {
+            width: 40px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+          }
+          button {
+            padding: 10px 20px;
+            width: 40px;
+            font-family: Manrope;
+          }
+        }
+      }
     }
   }
   .text__content {
