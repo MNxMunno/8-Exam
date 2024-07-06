@@ -9,10 +9,19 @@ header {
   z-index: 100;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   nav {
+    .menu__burger {
+      display: none;
+    }
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 32px;
+
     .search__input {
       height: 40px;
 
@@ -70,6 +79,89 @@ header {
       &:hover {
         background: #fff;
         color: #454545;
+      }
+    }
+  }
+  .nav_collac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    opacity: 0;
+    .link {
+      border-bottom: 1px solid #454545;
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19.12px;
+      text-align: left;
+      color: #454545;
+    }
+    .btn__catalogg {
+      background: #454545;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 12px;
+      border: 1px solid #454545;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      svg {
+        font-size: 16px;
+      }
+      &:hover {
+        background: #fff;
+        color: #454545;
+      }
+    }
+    .top_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  .bottom_inp {
+    display: none;
+  }
+  @media only screen and (max-width: 909px) {
+    & {
+      nav {
+        .menu__burger {
+          display: block;
+          svg {
+            font-size: 32px;
+          }
+        }
+        flex-wrap: wrap;
+        height: auto;
+        .search__input {
+          display: none;
+        }
+        .btn__catalog {
+          display: none;
+        }
+      }
+      .bottom_inp {
+        padding-top: 20px;
+        display: block;
+        flex-direction: column;
+      }
+      .nav_collac {
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        background: #fff;
+        transition: 0.3s;
+        &.show {
+          top: 150px;
+        }
       }
     }
   }

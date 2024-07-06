@@ -27,8 +27,8 @@ const SearchInput = () => {
     }
   }, [searchValue]);
   return (
-    <div>
-      <div className="product_search">
+    <>
+      <div className="nav_search">
         <input
           className="search"
           type="text"
@@ -51,7 +51,7 @@ const SearchInput = () => {
           <></>
         )}
       </div>
-    </div>
+    </>
   );
 };
 
