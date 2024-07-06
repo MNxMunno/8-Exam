@@ -43,6 +43,9 @@ button {
 @import "./components/navbarTop";
 @import "./components/nornlight";
 @import "./components/mapProducts";
+@import "./components/empty";
+@import "./components/skileton";
+@import "./components/loading";
 // @import "./components/products";
 @import "./components/NotFound";
 @import "./components/brends";
@@ -56,3 +59,6 @@ button {
 @import "./routes/blogPage";
 @import "./routes/garant";
 @import "./routes/contact";
+@import "./routes/wishlist";
+@import "./routes/products";
+@import "./routes/detail";

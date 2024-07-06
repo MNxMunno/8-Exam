@@ -14,11 +14,19 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <main>
-      {/* <Banner /> */}
-      {/* <Catalog /> */}
-      {/* <Nornlight /> */}
-      {/* <Brend /> */}
+      <Banner />
+      <Catalog />
+      <Nornlight />
+      <div className="container">
+        <div className="titles">
+          <h1>Популярные товары</h1>
+          <button onClick={() => navigate("/products")}>
+            <Btn text={"Все товары"} />
+          </button>
+        </div>
+      </div>
       <MapProducts />
+      <Brend />
       <div className="container">
         <div className="titles">
           <h1>Блог</h1>

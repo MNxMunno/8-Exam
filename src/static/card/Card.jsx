@@ -7,6 +7,7 @@ import { toggleHeart } from "../../context/slice/wishlist";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import { addToCart } from "../../context/slice/cartSlice";
+import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   let cart = useSelector((state) => state.cart.value);
@@ -17,11 +18,13 @@ const Card = ({ data }) => {
       <div className="img">
         <img src={product.url[0]} alt="Product" />
       </div>
-      <h3>{product.title}</h3>
+      <Link to={`/product/${product.id}`}>
+        <h3>{product.title}</h3>
+      </Link>
       <div className="card_content">
         <div className="price">
-          <del>{product.price * 2}</del>
-          <p>{product.price}</p>
+          <del>{product.price * 1.2} ₽</del>
+          <p>{product.price} ₽</p>
         </div>
         <button onClick={() => dispatch(addToCart(product))}>
           {cart?.some((item) => item.id === product.id) ? (

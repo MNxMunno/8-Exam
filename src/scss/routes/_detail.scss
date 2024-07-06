@@ -1,4 +1,95 @@
 .detail {
+  .detail__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    .card {
+      padding-right: 20px;
+      .img {
+        width: 500px;
+        img {
+          width: 100%;
+          // object-fit: contain;
+        }
+      }
+      h1 {
+        padding-top: 60px;
+        font-family: Manrope;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 44px;
+        text-align: left;
+        color: #454545;
+        padding-bottom: 40px;
+      }
+      .card__content {
+        padding: 0 40px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        .sites_btn {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        p {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22.4px;
+          text-align: left;
+          color: #b3b3b3;
+          padding-bottom: 12px;
+        }
+        h3 {
+          //styleName: desk mob text 16;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25.6px;
+          text-align: left;
+          color: #4d932c;
+          padding-bottom: 40px;
+        }
+      }
+      .prices {
+        padding-bottom: 40px;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        h2 {
+          font-family: Inter;
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 64px;
+          letter-spacing: 0.01em;
+          text-align: left;
+          color: #101010;
+        }
+        del {
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28.8px;
+          letter-spacing: 0.01em;
+          text-align: left;
+          color: #4c4c4c;
+        }
+      }
+      .desc {
+        padding-bottom: 40px;
+        //styleName: desk mob text 16;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+        text-align: left;
+        color: #4c4c4c;
+        max-width: 604px;
+      }
+    }
+  }
   .text__content {
     padding-top: 181px;
     h1 {
@@ -43,6 +134,20 @@
         &:nth-child(10),
         &:nth-child(12) {
           background: #f8f8f8;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 999px) {
+    .detail__content {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      .card {
+        padding: 0 20px;
+        // width: 100%;
+        .img {
+          width: 100%;
         }
       }
     }

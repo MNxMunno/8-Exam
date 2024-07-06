@@ -1,0 +1,32 @@
+.empty {
+  padding: 30px 0;
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+    .img {
+      //   margin: auto;
+      //   text-align: center;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    button {
+      padding: 14px 42px;
+      color: #fff;
+      background: #454545;
+      font-family: Manrope;
+      border-radius: 50px;
+      border: 1px solid #454545;
+      transition: 0.2s;
+      &:hover {
+        background: transparent;
+        color: #454545;
+      }
+    }
+  }
+}
