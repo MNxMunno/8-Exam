@@ -8,7 +8,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Auth from "./routes/auth/Auth";
 import Basket from "./routes/basket/Basket";
 import Blog from "./routes/blog/BlogPage";
-import Catalog from "./routes/catalog/Catalog";
+import Catalog from "./routes/catalogPage/CatalogPage";
 import Contact from "./routes/contact/Contact";
 import Wishlist from "./routes/wishlist/Wishlist";
 import Shipping from "./routes/shipping/Shipping";

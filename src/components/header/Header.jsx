@@ -12,6 +12,7 @@ import Navbartop from "../navbarTop/Navbartop";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
 import { useSelector } from "react-redux";
+import SearchInput from "../searchInput/SearchInput";
 function Header() {
   const [toggel, setToggel] = useState(false);
   const navigate = useNavigate();
@@ -27,10 +28,14 @@ function Header() {
             <NavLink to={"/"} className="navbar__logo">
               <img src={logo} alt="" />
             </NavLink>
-            <button>
+            <button
+              onClick={() => navigate("/catalog")}
+              className="btn__catalog"
+            >
               <RiMenu2Line /> Каталог
             </button>
             <div className="search__input">
+              {/* <SearchInput /> */}
               <input type="text" className="search" />
             </div>
             <div className="nav__items">

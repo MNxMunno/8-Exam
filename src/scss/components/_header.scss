@@ -14,8 +14,8 @@ header {
     justify-content: space-between;
     gap: 32px;
     .search__input {
-      height: 30px;
-      //   width: 100%;
+      height: 40px;
+
       display: flex;
       flex: 1;
       input {
@@ -52,6 +52,24 @@ header {
           right: 0;
           border-radius: 50px;
         }
+      }
+    }
+    .btn__catalog {
+      background: #454545;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 12px;
+      border: 1px solid #454545;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      svg {
+        font-size: 16px;
+      }
+      &:hover {
+        background: #fff;
+        color: #454545;
       }
     }
   }

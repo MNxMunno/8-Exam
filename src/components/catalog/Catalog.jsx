@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Btn from "../../static/btn/Btn";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -50,6 +50,8 @@ const Catalog = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const navigate = useNavigate();
+
   const card = data?.map((el) => (
     <SwiperSlide key={el.id} className="slide">
       <div className="card">
@@ -70,10 +72,6 @@ const Catalog = () => {
     <section className="catalog">
       <div className="container">
         <div className="content">
-          <div className="title">
-            <h1>Каталог</h1>
-            <Btn text={" Весь каталог "} />
-          </div>
           <div className="cards">{card}</div>
           <Swiper
             slidesPerView={2}
