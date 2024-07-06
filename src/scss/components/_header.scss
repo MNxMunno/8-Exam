@@ -89,6 +89,7 @@ header {
     flex-direction: column;
     gap: 16px;
     opacity: 0;
+    display: none;
     .link {
       border-bottom: 1px solid #454545;
       font-family: Manrope;
@@ -151,6 +152,7 @@ header {
         flex-direction: column;
       }
       .nav_collac {
+        display: flex;
         width: 100%;
         position: absolute;
         top: -1000px;
